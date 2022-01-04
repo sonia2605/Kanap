@@ -11,7 +11,7 @@ fetch ("http://localhost:3000/api/products")
 return res.json ();
 })
 .catch ((error) => {
-  let productsContainer = document.querySelector(".products-container");
+  let productsContainer = document.querySelector(".items");
   items.innerHTML = 
   "Oups ! Vérifiez votre connexion ...";
   items.style.textAlign = "center";
