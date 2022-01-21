@@ -260,17 +260,13 @@ function getForm() {
         }
     };
     }
-getForm();
-/*
-function postForm() {
-    //Accéder à l'élément form
-    varForm=document.getElementById('order');
-    // Prise en charge de l'élément submit
-    form.addEventListener('submit', (event) => {
+    getForm();
+    function postForm() {
+    const order = document.getElementById('order');
+    order.addEventListener('click', (event) => {
     event.preventDefault();
-    sendFormData();
-        });
-  */
+
+
     // Récupération des données du formulaire dans un objet
     const contact = {
       firstName : document.getElementById('firstName').value,

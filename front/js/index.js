@@ -8,15 +8,15 @@
 
     
     // Récupérer les articles depuis l'API
-    function getArticles() {
-      fetch("http://localhost:3000/api/products")
+    function getArticles () {
+       fetch("http://localhost:3000/api/products")
         .then(function (res) {
           return res.json();
         })
         .catch((error) => {
           let productsContainer = document.querySelector(".items");
           productsContainer.innerHTML =
-            "Vérifiez votre connexion";
+            "Oups, Vérifiez votre connexion";
           productsContainer.style.textAlign = "center";
           productsContainer.style.padding = "30vh 0";
         })
