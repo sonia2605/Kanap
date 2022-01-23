@@ -1,4 +1,4 @@
-          
+console.log(document.documentURI);          
     //Récupération du tableau de produits disponibles
     allArticles();
 
@@ -11,9 +11,9 @@
     function getArticles () {
        fetch("http://localhost:3000/api/products")
         .then(function (res) {
-          return res.json();
+          return res.json(); 
         })
-        .catch((error) => {
+        .catch((e) => {
           let productsContainer = document.querySelector(".items");
           productsContainer.innerHTML =
             "Oups, Vérifiez votre connexion";
@@ -57,11 +57,8 @@
       
       }
       });
-      console.log("création des produits");
+      console.log("création produits: ok");
     }  
-
-
-
 
       
     
