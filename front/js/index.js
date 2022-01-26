@@ -1,4 +1,4 @@
-console.log(document.documentURI);          
+         
     //Récupération du tableau de produits disponibles
     allArticles();
 
@@ -30,7 +30,7 @@ console.log(document.documentURI);
       
       // élément "a"
       let productLink = document.createElement ("a");
-      document.querySelector(".items") .appendChild (productLink);
+      document.querySelector(" .items") .appendChild (productLink);
       productLink.href = `product.html?id=${resultatApi[article]. _id}`;
       
       // élément "article"
