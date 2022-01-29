@@ -1,5 +1,5 @@
 let productLocalStorage = JSON.parse(localStorage.getItem("cart"));
-console.table(productLocalStorage);
+//console.table('productLocalStorage');
 if (!productLocalStorage) {
   const titleCart = document.querySelector("h1");
   const sectionCart = document.querySelector(".cart");
@@ -133,7 +133,7 @@ function getTotals() {
   // Le prix total
   totalPrice = 0;
   for (var i = 0; i < myLength; ++i) {
-    totalPrice += elemsQtt[i].valueAsNumber * productLocalStorage[i].priceKanap;
+  totalPrice += elemsQtt[i].valueAsNumber * productLocalStorage[i].priceKanap;
   }
 
   let productTotalPrice = document.getElementById("totalPrice");
@@ -311,3 +311,4 @@ function postForm() {
   }); // fin eventListener postForm
 } // fin envoi du formulaire postForm
 postForm();
+ 

@@ -1,4 +1,4 @@
-         
+          
     //Récupération du tableau de produits disponibles
     allArticles();
 
