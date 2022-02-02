@@ -4,7 +4,7 @@ const idProduct = new URL(window.location.href).searchParams.get("id");
 //Récupération des sélecteurs pour les futurs modifications
 const titleProduct = document.getElementById("title");
 const priceProduct = document.getElementById("price");
-const descriptionProduct = document.getElementById("description");
+const descriptionProduct = document.getElementById("description"); 
 const colorsProduct = document.getElementById("colors");
 const imgProduct = document.querySelector(".item__img");
 const img = document.createElement("img");
